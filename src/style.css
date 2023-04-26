@@ -1,14 +1,21 @@
 :root {
-  --primary-color: #8b5fbf;
+  --primary-color: #000000;
   --secondary-color: #d5c9e8;
   --accent-color: #a255bf;
-  --background-color: #f4f1f8;
+  --background-color: #000000;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: Arial, sans-serif;
+  font-family: Snell Roundhand, cursive;
+  font-style: cursive;
   text-align: center;
+  background-image: url(imagens/pngegg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: all;
+  background-position-y: 30%;
+  margin-top: 10%;
 }
 
 .container {

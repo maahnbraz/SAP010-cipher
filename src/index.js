@@ -1,4 +1,4 @@
-import cesarCipher from "./cipher";
+//import cesarCipher from "./cipher";
 
 function encode() {
   const shift = parseInt(document.getElementById("shift").value);

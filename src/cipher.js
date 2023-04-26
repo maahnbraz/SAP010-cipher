@@ -1,5 +1,5 @@
-import encode from "./index";
-import decode from "./index";
+//import encode from "./index";
+//import decode from "./index";
 
 function cesarCipher(message, shift) {
   let result = "";
