@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #000000;
+  --secondary-color: #d5c9e8;
+  --accent-color: #a255bf;
+  --background-color: #000000;
+}
+
+body {
+  background-color: var(--background-color);
+  font-family: Snell Roundhand, cursive;
+  font-style: cursive;
+  text-align: center;
+  background-image: url(imagens/pngegg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: all;
+  background-position-y: 30%;
+  margin-top: 10%;
+}
+
+.container {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 100;
+}
+
+h2 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 100;
+}
+
+h3 {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 100;
+}
+
+.form-container {
+  text-align: center;
+  background-color: var(--secondary-color);
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.form-group {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+p {
+  text-align: center;
+  color: var(--primary-color);
+  margin-top: 0;
+}
+
+label {
+  text-align: center;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: var(--primary-color);
+}
+
+input[type="number"] {
+  text-align: center;
+}
+,
+textarea {
+  text-align: center;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  width: 50%;
+  box-sizing: border-box;
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: var(--accent-color);
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  margin-right: 10px;
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #7a42af;
+}
+
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#result {
+  text-align: center;
+  background-color: white;
+  color: #666;
+}
