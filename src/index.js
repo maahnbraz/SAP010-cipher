@@ -1,17 +1,19 @@
-//import cesarCipher from "./cipher";
-
-function encode() {
-  const shift = parseInt(document.getElementById("shift").value);
-  const message = document.getElementById("message").value;
-  const result = document.getElementById("result");
-  result.value = cesarCipher(message, shift);
+import cipher from "./cipher.js";
+function codificar() {
+  const textoInput = document.querySelector("#textoInput").value;
+  const deslocamento = parseInt(document.querySelector("#deslocamento").value);
+  const textoCodificado = cipher.encode(deslocamento, textoInput);
+  document.querySelector("#textoOutput").value = textoCodificado;
 }
 
-function decode() {
-  const shift = parseInt(document.getElementById("shift").value);
-  const message = document.getElementById("message").value;
-  const result = document.getElementById("result");
-  result.value = cesarCipher(message, -shift);
+function decodificar() {
+  const textoInput = document.querySelector("#textoInput").value;
+  const deslocamento = parseInt(document.querySelector("#deslocamento").value);
+  const textoDecodificado = cipher.decode(deslocamento, textoInput);
+  document.querySelector("#textoOutput").value = textoDecodificado;
 }
 
-//3:10  error  'encode' is defined but never used  no-unused-vars
+document.querySelector("#codificarBtn").addEventListener("click", codificar);
+document
+  .querySelector("#decodificarBtn")
+  .addEventListener("click", decodificar);

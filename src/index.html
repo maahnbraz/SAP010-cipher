@@ -6,28 +6,62 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>MENSAGENS SECRETAS</h1>
+    <div id="root" style="text-align: center">
+      <div id="root-container">
+        <div class="header">
+          <h1>MENSAGENS SECRETAS</h1>
+          <h2>CRIPTOGRAFE SUAS MENSAGENS</h2>
+          <h3>
+            Envie e recebe mensagens criptografadas como um Imperador Romano!
+          </h3>
+        </div>
 
-    <h2>CRIPTOGRAFE SUAS MENSAGENS</h2>
-    <h3>Envie e recebe mensagens criptografadas como um Imperador Romano!</h3>
+        <div class="inputs-container">
+          <div class="input">
+            <p>INSIRA A MENSAGEM QUE DESEJA CODIFICAR:</p>
+            <div class="textarea">
+              <textarea
+                id="textoInput"
+                maxlength="400"
+                cols="20"
+                rows="20"
+              ></textarea>
+            </div>
+          </div>
+          <br />
+          <br />
 
-    <p>Escolha quantas letras você deseja que o alfabeto se desloque:</p>
-    <label for="shift">Deslocamento:</label>
-    <input type="number" id="shift" name="shift" min="1" max="25" value="3" />
-    <br /><br />
+          <div class="output">
+            <p>ESTA É SUA MENSAGEM CODIFICADA OU DECODIFICADA:</p>
+            <div class="textarea">
+              <textarea
+                id="textoOutput"
+                readonly
+                cols="20"
+                rows="20"
+              ></textarea>
+            </div>
+          </div>
+        </div>
 
-    <label for="message">Insira a Mensagem que deseja:</label>
-    <textarea id="message" name="message" rows="4" cols="50"></textarea>
-    <br /><br />
+        <div class="deslocamento">
+          <p>Escolha sua chave:</p>
+          <input type="number" id="deslocamento" min="1" value="0" />
+        </div>
 
-    <label for="result">Veja aqui o Resultado:</label>
-    <textarea id="result" name="result" rows="4" cols="50"></textarea>
-    <br /><br />
+        <div class="buttons">
+          <button id="codificarBtn">Codificar</button>
+          <button id="decodificarBtn">Decodificar</button>
+        </div>
+      </div>
+    </div>
 
-    <button onclick="encode()">Cifrar</button>
-    <button onclick="decode()">Decifrar</button>
-
-    <script src="cipher.js"></script>
-    <script src="index.js"></script>
+    <script src="index.js" type="module"></script>
   </body>
 </html>
+
+<div>
+  <footer>
+    <p>Desenvolvido por Marina Braz - SAP-010 - Laboratoria - Projeto 1</p>
+  </footer>
+</div>

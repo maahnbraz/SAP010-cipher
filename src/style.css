@@ -1,13 +1,11 @@
 :root {
   --primary-color: #000000;
-  --secondary-color: #d5c9e8;
-  --accent-color: #a255bf;
   --background-color: #000000;
 }
 
 body {
   background-color: var(--background-color);
-  font-family: Snell Roundhand, cursive;
+  font-family: Georgia, serif;
   font-style: cursive;
   text-align: center;
   background-image: url(imagens/pngegg.png);
@@ -18,38 +16,49 @@ body {
   margin-top: 10%;
 }
 
-.container {
-  text-align: center;
-  max-width: 800px;
-  margin: 0 auto;
+.inputs-container {
+  text-align: left;
+  max-width: 500px;
+  margin: auto;
   padding: 20px;
   box-sizing: border-box;
 }
 
-h1 {
+.header h1 {
   text-align: center;
   color: var(--primary-color);
   margin-top: 100;
+  font-family: Georgia, serif;
 }
 
-h2 {
+.header h2 {
   text-align: center;
   color: var(--primary-color);
   margin-top: 100;
+  font-family: Georgia, serif;
 }
 
-h3 {
+.header h3 {
   text-align: center;
   color: var(--primary-color);
   margin-top: 100;
+  font-family: Georgia, serif;
 }
 
-.form-container {
-  text-align: center;
-  background-color: var(--secondary-color);
-  border-radius: 5px;
-  padding: 20px;
-  margin-top: 20px;
+textarea {
+  background-color: #e0d6aa;
+  text-align: justify;
+  border-radius: 2px;
+  height: 50px;
+  width: 350px;
+  resize: none;
+  padding: 50px;
+  margin-top: 5px;
+  margin-left: auto;
+  color: #e2410f;
+  font-family: Georgia, serif;
+  font-size: 20px;
+  line-height: 1;
 }
 
 .form-group {
@@ -58,53 +67,37 @@ h3 {
 }
 
 p {
-  text-align: center;
+  text-align: auto;
   color: var(--primary-color);
   margin-top: 0;
 }
 
-label {
-  text-align: center;
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
-  color: var(--primary-color);
-}
-
 input[type="number"] {
   text-align: center;
-}
-,
-textarea {
-  text-align: center;
-  padding: 10px;
-  font-size: 16px;
-  border: none;
-  border-radius: 3px;
-  background-color: white;
-  width: 50%;
-  box-sizing: border-box;
-}
-
-textarea {
-  resize: none;
+  margin-bottom: 1%;
+  margin-top: 0;
+  padding: 0%;
+  background-color: #e0d6aa;
+  height: 25px;
+  width: 30px;
 }
 
 button {
   text-align: center;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: var(--accent-color);
+  background-color: rgb(75, 58, 3);
   color: white;
   border: none;
   border-radius: 3px;
   cursor: pointer;
   margin-right: 10px;
   transition: all 0.2s ease-in-out;
+  text-shadow: #e2410f 1in;
 }
 
 button:hover {
-  background-color: #7a42af;
+  background-color: #db5d09;
 }
 
 .button-container {
@@ -112,8 +105,5 @@ button:hover {
   margin-top: 20px;
 }
 
-#result {
-  text-align: center;
-  background-color: white;
-  color: #666;
+footer {
 }
