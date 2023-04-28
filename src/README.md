@@ -29,9 +29,7 @@ São para qualquer pessoa que queira transmitir uma mensagem, mas que caso seja 
 Foi o primeiro projeto criado para o bootcamp da Laboratoria, da turma SAP-010.
 A base do projeto é utilizar a Cifra de César, o Cipher.
 As ferramentas utilizadas foram HTML, CSS e JavaScript, sendo os dois últimos as linguagens.
-O protótipo do projeto era:
-
-![](path/to/imagens/PROTOTIPOCIPHER.png)
+O protótipo do projeto pode ser vizualizado na pasta imagens.
 
 A ideia era criar um visual no estilo Romano, bem antigo, como se fazia na época de Cesar, porque é da onde vem a criptografia.
 Fases do projeto:
